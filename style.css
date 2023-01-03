@@ -1,0 +1,16 @@
+.Box{
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+.Box::after{
+    content:"";
+    width: 25px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+}
+.Box:hover::after{
+    background-color: yellow;
+}
